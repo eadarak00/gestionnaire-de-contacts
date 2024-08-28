@@ -1,0 +1,40 @@
+@import url('./_variables.css');
+
+.navbar{
+    padding: 10px 20px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.fa-address-book{
+    font-size: 2.5rem;
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+/* Style des éléments de navigation */
+.navbar-nav {
+    font-size: 1.1rem;
+}
+
+.nav-link {
+    color: var(--tertiary-color);
+    transition: color .3s ease, transform .3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+.nav-link, .nav-link:hover {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
