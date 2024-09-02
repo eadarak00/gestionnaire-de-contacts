@@ -1,0 +1,75 @@
+@import url('./_variables.css');
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Style pour le bouton arrondi */
+#btn-submit {
+    border-radius: 50%;
+    padding: 10px 15px;
+    background-color: #5A5AFF;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+/* Keyframes pour l'animation d'apparition du champ de saisie */
+@keyframes revealInput {
+    0% {
+        width: 0;
+        padding: 0;
+        border-color: transparent;
+        opacity: 0;
+    }
+    50% {
+        width: 250px;
+        padding: 5px;
+        border-color: #ccc;
+        opacity: 0.5;
+    }
+    100% {
+        width: 500px;
+        padding: 10px;
+        border-color: #ccc;
+        opacity: 1;
+    }
+}
+
+/* Style pour le champ de saisie caché */
+.search-input {
+    display: none;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    opacity: 0;
+    background-color: #c4c4f1;
+}
+
+/* Style pour afficher le champ de saisie avec l'animation */
+.search-input.show {
+    display: inline-block;
+    animation: revealInput 0.5s ease forwards;
+}
+
+/* Focus state pour le champ de saisie */
+.search-input.show:focus{
+    border: 2px solid #7777EC;
+}
+
+.head-table{
+    padding: 10px 15px !important;
+    text-align: center;
+    background: #5A5AFF !important;
+    border-right: 2px solid white;
+}

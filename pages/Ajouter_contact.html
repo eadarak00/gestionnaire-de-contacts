@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Contacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/ajout.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand poppins-semibold-italic" href="../index.html"><i
+                    class="fa-solid fa-address-book"></i>Gestionnaire de Contacts</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav poppins-light ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lister_contacts.html">Mes contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Ajouter_contact.html">Ajouter un contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="content">
+        <div class="container">
+            <div class="image">
+                <img src="../img/Contact.svg" alt="Contact image">
+            </div>
+
+            <form action="" class="form validation poppins-regular" novalidate>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="fullName" placeholder="john Doe" required>
+                    <label for="fullName">Nom Complet</label>
+                    <div class="invalid-feedback">
+                        Vueillez renseigner votre Nom.
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="telephone" placeholder="+221 77 000 0000">
+                    <label for="telephone">Telephone</label>
+                    <div class="invalid-feedback">
+                        Le numero de telephone est compose de 9 chiffres.
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email">Email address</label>
+                    <div class="invalid-feedback">
+                        l'adresse mail doit contenir '@' et '.' !
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary poppins-semibold-italic" type="submit">Ajouter</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <p class="poppins-regular">&copy; 2024 Gestionnaire de Contacts. eadarak</p>
+            <div class="social-media">
+                <a href="https://github.com/eadarak00" target="_blank" class="btn-social"><i
+                        class="fa-brands fa-square-github"></i></a>
+                <a href="" target="_blank" class="btn-social"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/validation.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

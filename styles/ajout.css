@@ -1,0 +1,57 @@
+@import url('./_variables.css');
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10%;
+}
+
+.container .image{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 600px;
+    background-color: #cdcdff;
+    width: 40%;
+}
+
+.container .image img{
+    width: 400px;
+}
+
+.container .form{
+    width: 45%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.valid-icon, .invalid-icon {
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.valid-icon {
+    color: green;
+}
+
+.invalid-icon {
+    color: red;
+}
+
+.btn{
+    background: var(--primary-color);
+    width: 100px;
+    transition: background .5s ease;
+}
+
+.btn:hover{
+    background: #4141f0;
+}
