@@ -33,9 +33,9 @@
 
     <main class="content container">
         <div class="search-form">
-            <form action="">
+            <form id="search-form">
                 <input type="text" name="search" id="search" class="search-input hidden">
-                <button type="button" id="btn-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button type="submit" id="btn-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
 
@@ -48,12 +48,49 @@
                     <th class="head-table" colspan="2">Actions</th>
                 </tr>
             </thead>
-            <tbody class="table-body">
+            <tbody id="table-body">
 
             </tbody>
         </table>
     </main>
     
+     <!-- Modal de modification de tâche -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateModalLabel">Modifier la tâche</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="modal-form" method="post">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="fullName" placeholder="john Doe" required>
+                            <label for="fullName">Nom Complet</label>
+                            <div class="invalid-feedback">
+                                Vueillez renseigner votre Nom.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="telephone" placeholder="+221 77 000 0000">
+                            <label for="telephone">Telephone</label>
+                            <div class="invalid-feedback">
+                                Le numero de telephone est compose de 9 chiffres.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback">
+                                l'adresse mail doit contenir '@' et '.' !
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Modifier</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer">
